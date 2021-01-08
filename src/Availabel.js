@@ -18,8 +18,6 @@ class Availabel extends React.Component {
                 {availabelData: data[0]}))
     }
 
-
-
     render() {
         return (
             <div className="leftPos" >

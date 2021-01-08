@@ -1,5 +1,6 @@
 import React from "react";
 import FormComponent from "./FrormComponent";
+import {BrowserRouter as Router, Redirect, Route} from 'react-router-dom';
 
 class FormContainer extends React.Component {
     constructor() {
@@ -32,15 +33,17 @@ class FormContainer extends React.Component {
     handelSubmit(event){
         event.preventDefault()
         console.log(event.target.name)
-
     }
 
-    handelSubmit = (e) => {
+    handelSubmit(e){
         e.preventDefault ();
         alert ('A name was submitted: ');
-        this.props.history.push ('https://www.google.se/?hl=sv')
+        window.location.href="PageTwo.js";
+        window.location.href="/PageTwo.js";
+        document.getElementById("write").innerHTML = window.location.search;
     }
-    
+
+
 
     render() {
         return (<div className="centerPos">

@@ -1,6 +1,6 @@
 import React from "react";
-import ItemData from "../ItemData";
-import Todoitem from "../Todoitem";
+import ItemData from "./ItemData";
+import Todoitem from "./Todoitem";
 
 
 class Checkboxs extends React.Component {

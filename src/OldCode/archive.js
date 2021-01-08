@@ -1,6 +1,6 @@
-import ItemData from "../ItemData";
-import Todoitem from "../Todoitem";
-import State from "../State";
+import ItemData from "./ItemData";
+import Todoitem from "./Todoitem";
+import State from "./State";
 import React from "react";
 
 
