@@ -3,7 +3,7 @@ import React from "react"
 function FormComponent(props) {
 
     return (<main>
-            <h5>Register your information please: </h5>
+            <h3 className="h">Register your information please: </h3>
         <form  onSubmit={props.handelSubmit}>
             <input type="text"
                    value={props.data.firstName}
@@ -39,13 +39,13 @@ function FormComponent(props) {
                        onChange={props.handelchange}/> Female
             </label><br/><pre></pre>
 
+            <h3 className="h">Choose food: </h3>
             <label>Vegan:
                 <input type="checkbox"
                        name="isVegan"
                        checked={props.data.isVegan}
                        onChange={props.handelchange}/>
             </label><pre></pre>
-
 
             <label>WithChicken:
                 <input type="checkbox"
@@ -70,13 +70,20 @@ function FormComponent(props) {
                 <option value="south pole">South pole</option>
             </select>
 
-            <p>{props.data.firstName}
-                {props.data.lastName}
-                {props.data.age}
-                {props.data.gender}{props.data.destination}</p>
+
+        </form>
+
+            <p className="rightPos">Your name is  : {props.data.firstName}<br/><pre></pre>
+                your surname is  : {props.data.lastName}<br/><pre></pre>
+                your age is  : {props.data.age}<br/><pre></pre>
+                you are : {props.data.gender}<br/><pre></pre>
+                vegan:{props.data.isVegan ? "Yes" : "No"}<br/><pre></pre>
+                vegan:{props.data.withMeat ? "Yes" : "No"}<br/><pre></pre>
+                vegan:{props.data.withChicken? "Yes" : "No"}<br/><pre></pre>
+                destination :  {props.data.destination}
+            </p>
 
             <button className="button"> submit</button>
-        </form>
 
     </main>
     )

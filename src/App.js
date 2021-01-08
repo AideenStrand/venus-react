@@ -17,8 +17,7 @@ class App extends React.Component {
         return(
             <div>
             <div className="App">
-                <h1 className="h1">Venus React Site</h1>
-
+                <h1>Venus React Site</h1>
             </div>
             <div>
                 <Availabel />

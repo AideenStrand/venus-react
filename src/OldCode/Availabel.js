@@ -23,7 +23,7 @@ class Availabel extends React.Component {
     render() {
         return (
             <div className="leftPos" >
-                <h4>Choose id and put in your information please: </h4>
+                <h3  className="h">Choose id and put in your information please: </h3>
                 <button className="button" onClick={this.toggleButtonState}>Click</button>
                 <p>{this.state.availabelData.id}</p>
 

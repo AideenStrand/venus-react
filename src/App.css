@@ -1,6 +1,6 @@
 .App {
   text-align: right;
-  background-color: #282c34;
+  background-color: darkcyan;
   color: white;
   text-align: center;
 
@@ -24,6 +24,13 @@
   margin-left: -30px;
 }
 
+.h{
+  font-family: "Times New Roman",
+  Times, serif; color: darkblue;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px skyblue;
+}
+
 .centerPos{
   border: 3px solid skyblue;
   background-color: aliceblue;
@@ -33,6 +40,27 @@
   left: 40%;
   margin-top: -50px;
   margin-left: -50px;
+}
+
+.textColor{
+  color: black;
+  text-shadow: 2px 2px 5px skyblue;
+}
+
+
+.rightPos{
+  text-align: left;
+  border: 3px solid skyblue;
+  background-color: aliceblue;
+  width: 200px;
+  height: 350px;
+  padding: 20px;
+  position: absolute;
+  top: 5%;
+  left: 150%;
+  margin-top: -30px;
+  margin-left: -70px;
+  display: inline-block;
 }
 
 .button {
