@@ -23,6 +23,12 @@ function FormComponent(props) {
                    placeholder={"Age"}
                    onChange={props.handelchange}/><br /><pre></pre>
 
+            <input type="text"
+                   value={props.data.id}
+                   name="id"
+                   placeholder={"id"}
+                   onChange={props.handelchange}/><br /><pre></pre>
+
             <label>
 
                 <input type="radio"
@@ -68,8 +74,9 @@ function FormComponent(props) {
                 <option value="sweden">Sweden</option>
                 <option value="north pole">North pole</option>
                 <option value="south pole">South pole</option>
-            </select>
+            </select><br />
 
+            <button className="button"> submit</button>
 
         </form>
 
@@ -77,13 +84,12 @@ function FormComponent(props) {
                 your surname is  : {props.data.lastName}<br/><pre></pre>
                 your age is  : {props.data.age}<br/><pre></pre>
                 you are : {props.data.gender}<br/><pre></pre>
+                you personal id: : <pre></pre>{props.data.id}<br/><pre></pre>
                 vegan:{props.data.isVegan ? "Yes" : "No"}<br/><pre></pre>
                 vegan:{props.data.withMeat ? "Yes" : "No"}<br/><pre></pre>
                 vegan:{props.data.withChicken? "Yes" : "No"}<br/><pre></pre>
                 destination :  {props.data.destination}
             </p>
-
-            <button className="button"> submit</button>
 
     </main>
     )

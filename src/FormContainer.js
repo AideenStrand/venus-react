@@ -35,6 +35,12 @@ class FormContainer extends React.Component {
 
     }
 
+    handelSubmit = (e) => {
+        e.preventDefault ();
+        alert ('A name was submitted: ');
+        this.props.history.push ('https://www.google.se/?hl=sv')
+    }
+    
 
     render() {
         return (<div className="centerPos">
