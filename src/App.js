@@ -19,14 +19,16 @@ class App extends React.Component {
             <div className="App">
                 <h1 className="h1">Venus React Site</h1>
 
-
-
             </div>
             <div>
                 <Availabel />
-                <div><FormContainer/></div><br/>
             </div>
-                <div className="App-logo">   <img src={logo} className="App-logo" alt="logo" /></div>
+                <div>
+                    <FormContainer/>
+                </div>
+                <div className="App-logo">
+                    <img src={logo} className="App-logo" alt="logo" />
+                </div>
             </div>
         )
     }

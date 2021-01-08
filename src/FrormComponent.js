@@ -3,24 +3,25 @@ import React from "react"
 function FormComponent(props) {
 
     return (<main>
+            <h5>Register your information please: </h5>
         <form  onSubmit={props.handelSubmit}>
             <input type="text"
                    value={props.data.firstName}
                    name="firstName"
                    placeholder={"FirstName"}
-                   onChange={props.handelchange}/><br/>
+                   onChange={props.handelchange} />   <pre></pre>
 
             <input type="text"
                    value={props.data.lastName}
                    name="lastName"
                    placeholder={"LastName"}
-                   onChange={props.handelchange}/><br/>
+                   onChange={props.handelchange}/>  <pre></pre>
 
             <input type="text"
                    value={props.data.age}
                    name="age"
                    placeholder={"Age"}
-                   onChange={props.handelchange}/><br/>
+                   onChange={props.handelchange}/><br /><pre></pre>
 
             <label>
 
@@ -29,35 +30,35 @@ function FormComponent(props) {
                        name="gender"
                        checked={props.data.gender === "male"}
                        onChange={props.handelchange}/> Male
-            </label><br/>
+            </label>
             <label>
                 <input type="radio"
                        value="female"
                        name="gender"
                        checked={props.data.gender === "female"}
                        onChange={props.handelchange}/> Female
-            </label><br/><br/>
+            </label><br/><pre></pre>
 
-            <label>
+            <label>Vegan:
                 <input type="checkbox"
                        name="isVegan"
                        checked={props.data.isVegan}
-                       onChange={props.handelchange}/> Vegan:
-            </label>
-            <br/>
+                       onChange={props.handelchange}/>
+            </label><pre></pre>
 
-            <label>
+
+            <label>WithChicken:
                 <input type="checkbox"
                        name="withChicken"
                        checked={props.data.withChicken}
-                       onChange={props.handelchange}/> WithChicken:
-            </label>
-            <br/>
-            <label>
+                       onChange={props.handelchange}/>
+            </label><pre></pre>
+
+            <label>WithMeat:
                 <input type="checkbox"
                        name="withMeat"
                        checked={props.data.withMeat}
-                       onChange={props.handelchange}/> WithMeat:
+                       onChange={props.handelchange}/>
             </label>
             <br/><br/>
 
@@ -72,12 +73,9 @@ function FormComponent(props) {
             <p>{props.data.firstName}
                 {props.data.lastName}
                 {props.data.age}
-                {props.data.gender}{props.data.destination}
-                {props.data.isVegan ? "yes" : "no"}
-                {props.data.withMeat ? "yes" : "no"}
-                {props.data.withChicken ? "yes" : "no"}</p>
+                {props.data.gender}{props.data.destination}</p>
 
-            <button>submit</button>
+            <button className="button"> submit</button>
         </form>
 
     </main>

@@ -37,9 +37,10 @@ class FormContainer extends React.Component {
 
 
     render() {
-        return (
+        return (<div className="centerPos">
       <FormComponent handelchange={this.handelChange}
       data={this.state} handelSubmit={this.handelSubmit}/>
+            </div>
         )
     }
 
