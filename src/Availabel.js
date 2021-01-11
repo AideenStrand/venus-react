@@ -31,4 +31,25 @@ class Availabel extends React.Component {
     }
 }
 
+/*
+var response = []
+var i;
+fetch ("https://petstore.swagger.io/v2/pet/findByStatus?status=available")
+    .then (response => response.json ())
+    .then (data => {
+        for (i = 0; i < data.length; i++) {
+            response["id"] = data[i].id
+            response["name"] = data[i].name
+            console.log (response)
+        }
+    })
+    .then (result =>
+        this.setState (
+            {
+                availabelData: response
+            }))
+
+}*/
+
+
 export default Availabel
