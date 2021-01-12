@@ -43,32 +43,13 @@ class Availabel extends React.Component {
                     new one:
                 </h3>
                 <button type="button" className="button" onClick={this.toggleButtonState}>Click</button>
-                <p>{this.state.availabelData.id}</p>
-                <p>{this.state.availabelData.name}</p>
+                <p>User ID:   {this.state.availabelData.id}</p>
+                <p>User name: {this.state.availabelData.name}</p>
             </div>
 
         )
     }
 }
-
-/*
-var response = []
-var i;
-fetch ("https://petstore.swagger.io/v2/pet/findByStatus?status=available")
-    .then (response => response.json ())
-    .then (data => {
-        for (i = 0; i < data.length; i++) {
-            response["id"] = data[i].id
-            response["name"] = data[i].name
-            console.log (response)
-        }
-    })
-    .then (result =>
-        this.setState (
-            {
-                availabelData: response
-            }))
-}*/
 
 
 export default Availabel

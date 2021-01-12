@@ -9,6 +9,8 @@ class FormContainer extends React.Component {
             firsName: "",
             lastName: "",
             age: "",
+            id:"",
+            name:"",
             gender: "",
             destination: "",
             isVegan: false,

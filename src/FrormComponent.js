@@ -29,7 +29,14 @@ function FormComponent(props) {
                 <input type="text"
                        value={props.data.id}
                        name="id"
-                       placeholder={"id"}
+                       placeholder={"user id"}
+                       onChange={props.handelchange}/><br/>
+                <pre></pre>
+
+                <input type="text"
+                       value={props.data.name}
+                       name="name"
+                       placeholder={"user name"}
                        onChange={props.handelchange}/><br/>
                 <pre></pre>
 
@@ -95,7 +102,8 @@ function FormComponent(props) {
                 <pre></pre>
                 you are : {props.data.gender}<br/>
                 <pre></pre>
-                you personal id: : <pre></pre>{props.data.id}<br/>
+                you user id: : {props.data.id}<br/>
+                you user name: {props.data.name}<br/>
                 <pre></pre>
                 vegan:{props.data.isVegan ? "Yes" : "No"}<br/>
                 <pre></pre>
