@@ -1,4 +1,5 @@
 import React from "react";
+import DataJson from "./DataJson";
 
 class Availabel extends React.Component {
 
@@ -12,26 +13,29 @@ class Availabel extends React.Component {
 
     toggleButtonState = (event) => {
         var response = []
-        var i;
-
-
         console.log (this.state.count)
-        fetch ("https://petstore.swagger.io/v2/pet/findByStatus?status=pending")
+        fetch ("https://petstore.swagger.io/v2/pet/findByStatus?status=available")
             .then (response => response.json ())
-           // .then(repo => console.log(repo))
             .then(data => {
-                for(var i in data){
-                    response.push({
-                        id: data[i].id,
-                        name: data[i].name
-                    });
-                }
-                console.log(response)
+                    for (var i in data) {
+                        response.push ({
+                            id: data[i].id,
+                            name: data[i].name
+                        });
+                    }
+                console.log(response.length)
             })
             .then (data => this.setState (prevState => {
-                return {
-                    availabelData: response[this.state.count],
-                    count: prevState.count + 1
+                if(this.state.count < response.length) {
+                    return {
+                        availabelData: response[this.state.count],
+                        count: prevState.count + 1
+                    }
+                }else{
+                    return {
+                        availabelData: response[response.length -1],
+                        count: prevState.count + 1
+                    }
                 }
             }))
     }
