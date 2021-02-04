@@ -9,8 +9,8 @@ class FormContainer extends React.Component {
             firsName: "",
             lastName: "",
             age: "",
-            id:"",
-            name:"",
+            id: "",
+            name: "",
             gender: "",
             destination: "",
             isVegan: false,
@@ -32,28 +32,29 @@ class FormContainer extends React.Component {
             this.setState ({[name]: value})
     }
 
-    handelSubmit(event){
-        event.preventDefault()
-        console.log(event.target.name)
+    handelSubmit(event) {
+        event.preventDefault ()
+        console.log (event.target.name)
     }
 
-    handelSubmit(e){
+    handelSubmit(e) {
         e.preventDefault ();
         alert ('A name was submitted: ');
-        window.location.href="PageTwo.js";
-        window.location.href="/PageTwo.js";
-        document.getElementById("write").innerHTML = window.location.search;
+        window.location.href = "PageTwo.js";
+        window.location.href = "/PageTwo.js";
+        document.getElementById ("write").innerHTML = window.location.search;
     }
-
 
 
     render() {
         return (<div className="centerPos">
-      <div className="textColor"><FormComponent handelchange={this.handelChange}
-                                data={this.state} handelSubmit={this.handelSubmit}/></div>
+                <div className="textColor">
+                    <FormComponent handelchange={this.handelChange}
+                                   data={this.state} handelSubmit={this.handelSubmit}/></div>
             </div>
         )
     }
 
 }
+
 export default FormContainer

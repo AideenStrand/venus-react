@@ -1,10 +1,11 @@
 import React from "react"
+import {Link} from "react-router-dom";
 
 function FormComponent(props) {
 
     return (<main>
             <h3 className="h">Register your information please: </h3>
-            <form   action="page2.html" method="GET" onSubmit={props.handelSubmit}>
+            <form action="page2.html" method="GET" onSubmit={props.handelSubmit}>
                 <input type="text"
                        value={props.data.firstName}
                        name="firstName"
@@ -90,7 +91,9 @@ function FormComponent(props) {
                     <option value="south pole">South pole</option>
                 </select><br/>
 
-                <button className="button" formaction="https://www.google.se/?hl=sv"> submit</button>
+                <Link to="/page2">
+                    <button className="button"> submit</button>
+                </Link>
 
             </form>
 

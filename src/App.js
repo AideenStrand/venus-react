@@ -16,25 +16,24 @@ class App extends React.Component {
 
     render() {
         return (
-            <Router>
-                <div>
-                    <div className="App">
-                        <h1>Venus React Site</h1>
-                    </div>
-                    <Route path="/home"/>
-                    <div>
-                        <Availabel/>
-                    </div>
-                    <div>
-                        <FormContainer/>
-                    </div>
-                    <div className="App-logo">
-                        <img src={logo} className="App-logo" alt="logo"/>
-                    </div>
+            <div>
+                <div className="App">
+                    <h1>Venus React Site</h1>
                 </div>
-            </Router>
+                <Route path="/home"/>
+                <div>
+                    <Availabel/>
+                </div>
+                <div>
+                    <FormContainer/>
+                </div>
+                <div className="App-logo">
+                    <img src={logo} className="App-logo" alt="logo"/>
+                </div>
+            </div>
         )
     }
 }
+
 export default App
 
