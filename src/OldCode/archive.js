@@ -89,3 +89,15 @@ class Todoitem extends React.Component{
 
 export default Todoitem
 
+
+/*     )
+ }*/
+
+/*    render() {
+     return (<div className="centerPos">
+             <div className="textColor">
+                 <FormComponent handelchange={this.handelChange}
+                                data={this.state} handelSubmit={this.handelSubmit}/></div>
+         </div>
+     )
+ }*/

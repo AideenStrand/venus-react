@@ -21,6 +21,7 @@ class FormContainer extends React.Component {
         }
 
         this.handelChange = this.handelChange.bind (this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handelChange(event) {
@@ -39,6 +40,7 @@ class FormContainer extends React.Component {
         console.log (event.target.elements.id.value)
         console.log (event.target.id.value)
         console.log (this.inputNode.value)
+
     }
 
 
@@ -135,9 +137,14 @@ class FormContainer extends React.Component {
                                     <option value="south pole">South pole</option>
                                 </select><br/>
 
-                                <Link to="/page2">
+                                <Link
+                                    to={{
+                                        pathname: "/page2",
+                                        id: this.state.id
+                                    }}
+                                >
                                     <button type="submit" className="button"> submit</button>
-                                </Link>
+                            </Link>
                             </label>
 
                         </form>
@@ -168,18 +175,6 @@ class FormContainer extends React.Component {
     }
 
 
-    /*     )
-     }*/
-
-
-    /*    render() {
-         return (<div className="centerPos">
-                 <div className="textColor">
-                     <FormComponent handelchange={this.handelChange}
-                                    data={this.state} handelSubmit={this.handelSubmit}/></div>
-             </div>
-         )
-     }*/
 
 }
 
