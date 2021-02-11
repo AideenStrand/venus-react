@@ -3,11 +3,13 @@ import FormContainer from "./FormContainer";
 
 function Page2(props) {
 
-    console.log(props.location.id)
+
     return (
         <div className="centerPos">
-   {/*         <FormContainer />*/}
-            <p>You registered your information</p>
+            <p>You registered your information successfully</p>
+
+            <p >You registered id is : {props.location.id} </p>
+
         </div>
     );
 

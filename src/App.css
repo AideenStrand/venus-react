@@ -106,6 +106,10 @@
   color: #61dafb;
 }
 
+div.b {
+  font-size: large;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
