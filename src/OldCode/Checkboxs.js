@@ -17,7 +17,6 @@ class Checkboxs extends React.Component {
     handelChnage(id) {
         const completeStyle = {
             color: "red"
-
         }
         this.setState (prevState => {
             const updateTo = prevState.todos.map (todo => {
@@ -50,7 +49,6 @@ class Checkboxs extends React.Component {
             </div>
         )
     }
-
 }
 
 export default Checkboxs
