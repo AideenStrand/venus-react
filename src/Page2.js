@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 
 class Page2 extends React.Component {
 
@@ -50,24 +50,28 @@ class Page2 extends React.Component {
 
     render() {
 
-        {
             this.checkId (this.props.location.id)
-        }
 
         if (this.state.availableData.validate === true) {
             return (
                 <div className="centerPos">
                     <p> You registered your information successfully </p>
-                    <p> Your name: <span className="rightNumber"> {this.props.location.firstName}  {this.props.location.lastName}</span> </p>
-                    <p> You registered id is : <span className="rightNumber">{this.state.availableData.id} </span></p>
+                    <p> Name : <span
+                        className="rightNumber"> {this.props.location.firstName} {this.props.location.lastName}</span>
+                    </p>
+                    <p> Registered id : <span className="rightNumber">{this.state.availableData.id} </span></p>
+                    <p> User name : <span className="rightNumber">{this.props.location.userName} </span></p>
+                    <p> Birth date : <span className="rightNumber">{this.props.location.age} </span></p>
+                    <p> Address : <span className="rightNumber">{this.props.location.destination} </span></p>
+                    <p> Selected Food: <span className="rightNumber">{this.props.location.isVegan} </span></p>
                 </div>
             );
-        }else{
-            return(
-            <div className="centerPosAlert">
-                <p className="WrongNumber">Wrong number</p>
-                <p>Please back to previous page and choose right id </p>
-            </div>)
+        } else {
+            return (
+                <div className="centerPosAlert">
+                    <p className="WrongNumber">Wrong number</p>
+                    <p>Please back to previous page and choose right id </p>
+                </div>)
         }
     }
 }

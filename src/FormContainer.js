@@ -1,6 +1,4 @@
 import React from "react";
-import FormComponent from "./OldCode/FrormComponent";
-import {BrowserRouter as Router, Redirect, Route} from 'react-router-dom';
 import {Link} from "react-router-dom";
 
 class FormContainer extends React.Component {
@@ -11,6 +9,7 @@ class FormContainer extends React.Component {
             lastName: "",
             age: "",
             id: "",
+            userName:"",
             gender: "",
             destination: "",
             isVegan: false,
@@ -71,6 +70,7 @@ class FormContainer extends React.Component {
                                        onChange={this.handelChange}/><br/>
                                 <pre></pre>
 
+                                <label><p className="h">Choose right user id from part 1:</p>
                                 <input type="text"
                                        value={this.state.id}
                                        name="id"
@@ -78,11 +78,11 @@ class FormContainer extends React.Component {
                                        onChange={this.handelChange}
                                        ref={node => (this.inputNode = node)}/><br/>
                                 <pre></pre>
-
+                                </label>
                                 <input type="text"
-                                       value={this.state.name}
-                                       name="name"
-                                       placeholder={"user name"}
+                                       value={this.state.userName}
+                                       name="userName"
+                                       placeholder={"userName"}
                                        onChange={this.handelChange}/><br/>
                                 <pre></pre>
 
@@ -140,8 +140,12 @@ class FormContainer extends React.Component {
                                     to={{
                                         pathname: "/page2",
                                         id: this.state.id,
+                                        userName:this.state.userName,
                                         firstName: this.state.firstName,
                                         lastName: this.state.lastName,
+                                        age: this.state.age,
+                                        destination: this.state.destination,
+                                        isVegan: this.state.isVegan
                                     }}
                                 >
                                     <button type="submit" className="button"> submit</button>
@@ -159,7 +163,7 @@ class FormContainer extends React.Component {
                             you are : {this.state.gender}<br/>
                             <pre></pre>
                             you user id: : {this.state.id}<br/>
-                            you user name: {this.state.name}<br/>
+                            you user name: {this.state.userName}<br/>
                             <pre></pre>
                             vegan:{this.state.isVegan ? "Yes" : "No"}<br/>
                             <pre></pre>

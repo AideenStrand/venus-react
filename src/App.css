@@ -10,7 +10,7 @@
   text-align: center;
   margin-right: 10px;
   padding: 30px;
-  height: 350px;
+  height: 420px;
   width: 200px;
   position: absolute;
   background-color: aliceblue;
@@ -60,7 +60,11 @@
   text-align: center;
 }
 
-span.rightNumber {   color:blue;
+.numberPart1 {   color:#15418a;
+  font-weight: bold;
+  font-size: large;}
+
+span.rightNumber {   color:#15418a;
   font-weight: bold;
   font-size: large;}
 
