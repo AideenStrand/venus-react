@@ -61,7 +61,7 @@ class Page2 extends React.Component {
                     </p>
                     <p> Registered id : <span className="rightNumber">{this.state.availableData.id} </span></p>
                     <p> User name : <span className="rightNumber">{this.props.location.userName} </span></p>
-                    <p> Birth date : <span className="rightNumber">{this.props.location.age} </span></p>
+                    <p> Age : <span className="rightNumber">{this.props.location.age} </span></p>
                     <p> Address : <span className="rightNumber">{this.props.location.destination} </span></p>
                     <p> Selected Food: <span className="rightNumber">{this.props.location.isVegan} </span></p>
                 </div>

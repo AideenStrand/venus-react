@@ -154,24 +154,24 @@ class FormContainer extends React.Component {
 
                         </form>
 
-                        <p className="rightPos">Your name is : {this.state.firstName}<br/>
+                        <p className="rightPos">Your name is : <span className="rightNumber">{this.state.firstName}</span><br/>
                             <pre></pre>
-                            your surname is : {this.state.lastName}<br/>
+                            your surname is : <span className="rightNumber"> {this.state.lastName}</span><br/>
                             <pre></pre>
-                            your age is : {this.state.age}<br/>
+                            your age is : <span className="rightNumber"> {this.state.age}</span><br/>
                             <pre></pre>
-                            you are : {this.state.gender}<br/>
+                            you are : <span className="rightNumber"> {this.state.gender}</span><br/>
                             <pre></pre>
-                            you user id: : {this.state.id}<br/>
-                            you user name: {this.state.userName}<br/>
+                            you user id: : <span className="rightNumber"> {this.state.id}</span><br/>
+                            you user name: <span className="rightNumber"> {this.state.userName}</span><br/>
                             <pre></pre>
-                            vegan:{this.state.isVegan ? "Yes" : "No"}<br/>
+                            vegan:<span className="rightNumber"> {this.state.isVegan ? "Yes" : "No"}</span><br/>
                             <pre></pre>
-                            vegan:{this.state.withMeat ? "Yes" : "No"}<br/>
+                            vegan:<span className="rightNumber"> {this.state.withMeat ? "Yes" : "No"}</span><br/>
                             <pre></pre>
-                            vegan:{this.state.withChicken ? "Yes" : "No"}<br/>
+                            vegan:<span className="rightNumber"> {this.state.withChicken ? "Yes" : "No"}</span><br/>
                             <pre></pre>
-                            destination : {this.state.destination}
+                                                            destination : <span className="rightNumber"> {this.state.destination}</span>
                         </p>
                     </main>
                 </div>
