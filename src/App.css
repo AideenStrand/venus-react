@@ -60,6 +60,13 @@
   text-align: center;
 }
 
+.hWrong{
+  font-family: "Times New Roman",
+  Times, serif; color: darkred;
+  font-weight: bold;
+  font-size: large;
+}
+
 .numberPart1 {   color:#15418a;
   font-weight: bold;
   font-size: large;}

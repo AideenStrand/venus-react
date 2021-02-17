@@ -69,8 +69,8 @@ class Page2 extends React.Component {
         } else {
             return (
                 <div className="centerPosAlert">
-                    <p className="WrongNumber">Wrong number</p>
-                    <p>Please back to previous page and choose right id </p>
+                    <p className="WrongNumber"> Wrong number  !</p>
+                    <p className="hWrong">Please back to previous page and choose right id </p>
                 </div>)
         }
     }
