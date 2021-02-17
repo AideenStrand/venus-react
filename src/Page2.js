@@ -55,7 +55,7 @@ class Page2 extends React.Component {
         if (this.state.availableData.validate === true) {
             return (
                 <div className="centerPos">
-                    <p> You registered your information successfully </p>
+                    <p className="h2"> You registered your information successfully </p>
                     <p> Name : <span
                         className="rightNumber"> {this.props.location.firstName} {this.props.location.lastName}</span>
                     </p>
@@ -70,6 +70,7 @@ class Page2 extends React.Component {
             return (
                 <div className="centerPosAlert">
                     <p className="WrongNumber"> Wrong number  !</p>
+                    <p className="hWrong"> User id :  <span className="WrongNumber">  {this.props.location.id} </span> is wrong</p>
                     <p className="hWrong">Please back to previous page and choose right id </p>
                 </div>)
         }

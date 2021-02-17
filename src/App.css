@@ -30,6 +30,14 @@
   text-shadow: 2px 2px 5px skyblue;
 }
 
+.h2{
+  font-family: "Times New Roman",
+  Times, serif; color: darkblue;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px skyblue;
+  font-size: x-large;
+}
+
 .centerPos{
   border: 3px solid skyblue;
   background-color: aliceblue;
@@ -56,7 +64,7 @@
 .WrongNumber{
   color:red;
   font-weight: bold;
-  font-size: large;
+  font-size: x-large;
   text-align: center;
 }
 
@@ -65,6 +73,7 @@
   Times, serif; color: darkred;
   font-weight: bold;
   font-size: large;
+  text-align: center;
 }
 
 .numberPart1 {   color:#00aeff;
