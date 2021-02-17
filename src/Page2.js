@@ -58,8 +58,8 @@ class Page2 extends React.Component {
             return (
                 <div className="centerPos">
                     <p> You registered your information successfully </p>
-                    <p className="rightNumber"> Your name: {this.props.location.firstName}  {this.props.location.lastName} </p>
-                    <p className="rightNumber"> You registered id is : {this.state.availableData.id} </p>
+                    <p> Your name: <span className="rightNumber"> {this.props.location.firstName}  {this.props.location.lastName}</span> </p>
+                    <p> You registered id is : <span className="rightNumber">{this.state.availableData.id} </span></p>
                 </div>
             );
         }else{
