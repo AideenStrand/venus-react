@@ -37,6 +37,7 @@ class Availabel extends React.Component {
                     }
                 }
             }))
+        console.log(this.state.availabelData)
     }
 
     render() {
