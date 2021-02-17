@@ -58,13 +58,15 @@ class Page2 extends React.Component {
             return (
                 <div className="centerPos">
                     <p> You registered your information successfully </p>
-                    <p> You registered id is : {this.state.availableData.id} </p>
+                    <p className="rightNumber"> Your name: {this.props.location.firstName}  {this.props.location.lastName} </p>
+                    <p className="rightNumber"> You registered id is : {this.state.availableData.id} </p>
                 </div>
             );
         }else{
             return(
-            <div className="centerPos">
-                <p>you have wrong number</p>
+            <div className="centerPosAlert">
+                <p className="WrongNumber">Wrong number</p>
+                <p>Please back to previous page and choose right id </p>
             </div>)
         }
     }

@@ -1,5 +1,5 @@
 import React from "react";
-import FormComponent from "./FrormComponent";
+import FormComponent from "./OldCode/FrormComponent";
 import {BrowserRouter as Router, Redirect, Route} from 'react-router-dom';
 import {Link} from "react-router-dom";
 
@@ -7,11 +7,10 @@ class FormContainer extends React.Component {
     constructor() {
         super ();
         this.state = {
-            firsName: "",
+            firstName: "",
             lastName: "",
             age: "",
             id: "",
-            name: "",
             gender: "",
             destination: "",
             isVegan: false,
@@ -140,7 +139,9 @@ class FormContainer extends React.Component {
                                 <Link
                                     to={{
                                         pathname: "/page2",
-                                        id: this.state.id
+                                        id: this.state.id,
+                                        firstName: this.state.firstName,
+                                        lastName: this.state.lastName,
                                     }}
                                 >
                                     <button type="submit" className="button"> submit</button>

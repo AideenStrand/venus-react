@@ -4,7 +4,6 @@
   color: white;
   text-align: center;
 
-
 }
 
 .leftPos {
@@ -40,6 +39,31 @@
   left: 40%;
   margin-top: -50px;
   margin-left: -50px;
+}
+
+.centerPosAlert{
+  border: 3px solid red;
+  background-color: aliceblue;
+  padding: 40px;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  margin-top: -50px;
+  margin-left: -50px;
+
+}
+
+.WrongNumber{
+  color:red;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+
+.rightNumber{
+  color:blue;
+  font-weight: bold;
+  font-size: large;
 }
 
 .textColor{
