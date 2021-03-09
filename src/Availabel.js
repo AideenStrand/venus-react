@@ -49,9 +49,9 @@ class Availabel extends React.Component {
                 </h3>
                 <button type="button" className="button" onClick={this.toggleButtonState}>Click</button>
                 <p>User ID: </p><p
-                    className="numberPart1"> {this.state.availabelData.id} </p>
+                className="numberPart1"> {this.state.availabelData.id} </p>
                 <p>User name: </p><p
-                    className="numberPart1"> {this.state.availabelData.name} </p>
+                className="numberPart1"> {this.state.availabelData.name} </p>
             </div>
 
         )

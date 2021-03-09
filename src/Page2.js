@@ -31,9 +31,6 @@ class Page2 extends React.Component {
                         }
 
                     }
-                    console.log ("event")
-                    console.log (event)
-                    console.log (response)
                 })
                 .then (re => this.setState (preState => {
                         for (var i in response) {
@@ -50,7 +47,7 @@ class Page2 extends React.Component {
 
     render() {
 
-            this.checkId (this.props.location.id)
+        this.checkId (this.props.location.id)
 
         if (this.state.availableData.validate === true) {
             return (
@@ -69,9 +66,11 @@ class Page2 extends React.Component {
         } else {
             return (
                 <div className="centerPosAlert">
-                    <p className="WrongNumber"> Wrong number  !</p>
-                    <p className="hWrong"> User id :  <span className="WrongNumber">  {this.props.location.id} </span> is wrong</p>
-                    <p className="hWrong">Please back to previous page and choose right id </p>
+                    <p className="errorNumber"> Wrong number !</p>
+                    <p className="hError"> User id : <span className="errorNumber">  {this.props.location.id} </span> is
+                        wrong</p>
+                    <p className="hError">Please back to previous page and choose right id </p>
+                    <button className="backButton" onClick={this.props.history.goBack}>Back</button>
                 </div>)
         }
     }

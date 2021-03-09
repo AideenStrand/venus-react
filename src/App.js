@@ -8,7 +8,7 @@ import {Route} from "react-router-dom";
 class App extends React.Component {
 
     constructor() {
-        super ();
+        super();
         this.state = {
             isloading: true
         }
